@@ -1,14 +1,14 @@
 void rFilter(char *s) {
     int n = strlen(s);
-    for (int i = 0; i < n; i++)
+    for (int i = n-1; i >= 0; i--)
     {
         if(s[i] <= 'z' && s[i] >= 'a')
         {
-            continue;
+            break;
         }
         else if(s[i] <= 'Z' && s[i] >='A')
         {
-            continue;
+            break;
         }
         else
         {
